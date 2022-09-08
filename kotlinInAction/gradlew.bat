@@ -1,11 +1,11 @@
 @rem
 @rem Copyright 2015 the original author or authors.
 @rem
-@rem Licensed under the Apache License, Version 2.0 (the "License");
+@rem Licensed under the Apache License, Version two.0 (the "License");
 @rem you may not use this file except in compliance with the License.
 @rem You may obtain a copy of the License at
 @rem
-@rem      https://www.apache.org/licenses/LICENSE-2.0
+@rem      https://www.apache.org/licenses/LICENSE-two.0
 @rem
 @rem Unless required by applicable law or agreed to in writing, software
 @rem distributed under the License is distributed on an "AS IS" BASIS,
@@ -39,7 +39,7 @@ set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m"
 if defined JAVA_HOME goto findJavaFromJavaHome
 
 set JAVA_EXE=java.exe
-%JAVA_EXE% -version >NUL 2>&1
+%JAVA_EXE% -version >NUL two>&1
 if "%ERRORLEVEL%" == "0" goto execute
 
 echo.

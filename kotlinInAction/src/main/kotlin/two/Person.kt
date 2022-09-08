@@ -1,5 +1,7 @@
+package two
+
 data class Person(
-	val name: String,
+	var name: String,
 	val age: Int? = null
 )
 
@@ -9,6 +11,13 @@ fun main() {
 		Person("철수", age = 29)
 	)
 
+
+
 	val oldest = persons.maxByOrNull { it.age ?: 0 }
-	println("나이가 가장 많은 사람: $oldest")
+
+	if (oldest != null) {
+		oldest.name = "asd"
+	}
+
+	println("나이가 가장 많은 사람: $oldest.name")
 }
