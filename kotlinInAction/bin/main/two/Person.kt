@@ -1,0 +1,23 @@
+package two
+
+data class Person(
+	var name: String,
+	val age: Int? = null
+)
+
+fun main() {
+	val persons = listOf(
+		Person("영희"),
+		Person("철수", age = 29)
+	)
+
+
+
+	val oldest = persons.maxByOrNull { it.age ?: 0 }
+
+	if (oldest != null) {
+		oldest.name = "asd"
+	}
+
+	println("나이가 가장 많은 사람: $oldest.name")
+}
